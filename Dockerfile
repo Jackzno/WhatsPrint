@@ -9,4 +9,5 @@ RUN npm install
 
 COPY . .
 
-CMD [ "/app/run.sh" ]
+RUN chmod +x /app/run.sh
+CMD [ "bash", "/app/run.sh" ]
