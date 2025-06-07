@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "slug": "whatsapp_print",
   "description": "Druckt über WhatsApp empfangene Dateien automatisch",
-  "icon": "icon2.png",
+  "icon": "icon.png",
   "startup": "services",
   "boot": "auto",
   "arch": ["amd64", "armv7", "aarch64"],
