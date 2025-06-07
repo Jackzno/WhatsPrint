@@ -8,7 +8,7 @@
   "boot": "auto",
   "arch": ["amd64", "armv7", "aarch64"],
   "ingress": false,
-  
+  "init": false,
   "ports": {
     "631/tcp": 631
   },
@@ -17,7 +17,7 @@
     
     "allowed_numbers": ["491571234567@c.us"],
     "allowed_extensions": ["pdf", "png", "jpg", "odt", "docx", "xlsx"],
-    "printer_name": "HP_DeskJet_3630_series"
+    "printer_name": "MeinDrucker"
   },
   "schema": {
     "allowed_numbers": ["str"],
