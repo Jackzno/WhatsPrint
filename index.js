@@ -12,9 +12,12 @@ const allowedExtensions = (process.env.WHATSAPP_ALLOWED_EXTENSIONS || '').split(
 const printerName = process.env.WHATSAPP_PRINTER_NAME || 'HP_DeskJet_3630_series';
 
 const client = new Client({
-    authStrategy: new (require('whatsapp-web.js').LocalAuth)(),
+    authStrategy: new (require('whatsapp-web.js').LocalAuth)({
+        dataPath: '/data/wwebjs_auth'
+    }),
     puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'] }
 });
+
 
 client.on('qr', qr => qrcode.generate(qr, { small: true }));
 client.on('ready', () => console.log('Client is ready!'));
