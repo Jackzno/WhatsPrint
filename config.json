@@ -1,6 +1,6 @@
 {
   "name": "WhatsPrint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "slug": "whatsapp_print",
   "description": "Druckt über WhatsApp empfangene Dateien automatisch",
   "icon": "icon.png",
