@@ -14,7 +14,7 @@
   },
   "map": ["config:rw", "share:rw"],
   "options": {
-    "printer_name": "MeinDrucker",
+    
     "allowed_numbers": ["491571234567@c.us"],
     "allowed_extensions": ["pdf", "png", "jpg", "odt", "docx", "xlsx"],
     "printer_name": "HP_DeskJet_3630_series"
