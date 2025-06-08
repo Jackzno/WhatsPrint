@@ -1,6 +1,6 @@
 {
   "name": "WhatsPrint",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "slug": "whatsapp_print",
   "description": "Druckt über WhatsApp empfangene Dateien automatisch über einen externen CUPS-Server",
   "icon": "icon.png",
