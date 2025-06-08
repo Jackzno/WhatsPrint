@@ -1,21 +1,20 @@
 {
   "name": "WhatsPrint",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "slug": "whatsapp_print",
   "description": "Druckt über WhatsApp empfangene Dateien automatisch",
   "icon": "icon.png",
   "startup": "services",
   "boot": "auto",
   "arch": ["amd64", "armv7", "aarch64"],
-  "ingress": true,
-  "ingress_port":631,
   "init": false,
+  "host_network": true,
+  "ingress": false,
   "ports": {
     "631/tcp": 631
   },
   "map": ["config:rw", "share:rw"],
   "options": {
-    
     "allowed_numbers": ["491571234567@c.us"],
     "allowed_extensions": ["pdf", "png", "jpg", "odt", "docx", "xlsx"],
     "printer_name": "MeinDrucker"
@@ -25,5 +24,4 @@
     "allowed_extensions": ["str"],
     "printer_name": "str"
   }
-  
 }
