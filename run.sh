@@ -40,8 +40,11 @@ fi
 
 # Starte CUPS
 echo "[INFO] Starte CUPS..."
-cupsd
+cupsd -f &
+sleep 2
+pgrep cupsd && echo "[INFO] CUPS läuft." || echo "[ERROR] CUPS wurde nicht gestartet."
 
 # Starte WhatsApp-Client
 echo "[INFO] Starte WhatsApp-Client..."
 node index.js
+wait -n
