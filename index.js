@@ -60,7 +60,7 @@ client.on('message', async msg => {
 });
 
 function sendToPrinter(filepath, msg, toDelete = []) {
-    exec(`lp -d ${printerName} "${filepath}"`, async (err) => {
+    exec(`lp -h ${process.env.WHATSAPP_CUPS_HOST} -d ${printerName} "${filepath}"`, async (err) => {
         if (err) await msg.reply('Druckfehler.');
         else await msg.reply('Datei wurde gedruckt.');
 
