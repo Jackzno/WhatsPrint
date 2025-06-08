@@ -8,6 +8,7 @@
   "boot": "auto",
   "arch": ["amd64", "armv7", "aarch64"],
   "ingress": true,
+  "ingress_port":631,
   "init": false,
   "ports": {
     "631/tcp": 631
